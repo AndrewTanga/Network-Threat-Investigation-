@@ -19,7 +19,9 @@ Post-16:05	| TLS connections observed to external infrastructure
 
 Key Findings
 Initial Access & Payload Delivery
+
 ![2](https://github.com/user-attachments/assets/fa2ddfdc-9a9e-4528-bede-edaa4dea7888)
+
 - The host accessed jinjadiocese[.]com, which responded with an HTTP 200 OK and delivered an archived file.
 - The downloaded file was identified as:
   - Filename: GURVU.zip
@@ -29,11 +31,11 @@ Initial Access & Payload Delivery
 Post-Download Network Activity
 
 - Shortly after the download, the host issued DNS queries to multiple domains with the following characteristics:
-![TCP stream](https://github.com/user-attachments/assets/eee26dc1-8921-4ab4-a88c-5e8354db07bf)
   - Recently registered (December 2023)
   - Flagged as malicious by multiple security vendors
   - Reported in association with Pikabot
-
+  - 
+![TCP stream](https://github.com/user-attachments/assets/eee26dc1-8921-4ab4-a88c-5e8354db07bf)
 
 OSINT & Malware Attribution
 OSINT enrichment was performed on domains observed in the PCAP:
@@ -42,6 +44,7 @@ Domain	           | Notes
 keebling[.]com	   | Flagged by multiple vendors; linked to Pikabot
 baumbachers[.]com	 | Flagged by multiple vendors; linked to Pikabot
 ionister[.]com	   | Flagged by multiple vendors; linked to Pikabot
+
 ![TCP stream](https://github.com/user-attachments/assets/ee9f02fd-00e6-4ab4-808a-61b4ccfbf9e4)
 
 - WHOIS data showed all domains were registered on 2023-12-12
@@ -49,12 +52,15 @@ ionister[.]com	   | Flagged by multiple vendors; linked to Pikabot
   - Downloader / installer
   - Loader
   - Core backdoor component
+    
 ![additional - PIKABOT](https://github.com/user-attachments/assets/e817d98d-b7ab-40bb-b489-d8ee9e873f3e)
+
 File Analysis:
 - The ZIP file extracted from the PCAP was hashed in an isolated environment.
 - SHA256 - F24888DA47BAE0149AB5C0D887D32FC155CB42AC8138D22699AE12CE1DCA6BD1
 - VirusTotal results showed 28 security vendors flagging the file as malicious.
 - Detection labels were consistent with Pikabot-related malware.
+  
 ![5](https://github.com/user-attachments/assets/62500e11-fa1b-4cc8-8a50-d67d8212125a)
 
 Indicators of Compromise (IOCs)
