@@ -40,7 +40,7 @@ Recently registered (December 2023)
 
 Flagged as malicious by multiple security vendors
 Reported in association with Pikabot
-![additional - PIKABOT](https://github.com/user-attachments/assets/e817d98d-b7ab-40bb-b489-d8ee9e873f3e)
+
 
 OSINT & Malware Attribution
 
@@ -55,26 +55,16 @@ ionister[.]com	Flagged by multiple vendors; linked to Pikabot
 WHOIS data showed all domains were registered on 2023-12-12
 
 Malpedia identifies Pikabot as a malware family comprising:
-
 Downloader / installer
-
 Loader
-
 Core backdoor component
-
-File Analysis
-
+![additional - PIKABOT](https://github.com/user-attachments/assets/e817d98d-b7ab-40bb-b489-d8ee9e873f3e)
+File Analysis:
 The ZIP file extracted from the PCAP was hashed in an isolated environment.
-SHA256
-
-F24888DA47BAE0149AB5C0D887D32FC155CB42AC8138D22699AE12CE1DCA6BD1
-
-
-VirusTotal results showed 28 security vendors flagging the file as malicious.
+SHA256 - F24888DA47BAE0149AB5C0D887D32FC155CB42AC8138D22699AE12CE1DCA6BD1
+- VirusTotal results showed 28 security vendors flagging the file as malicious.
+- Detection labels were consistent with Pikabot-related malware.
 ![5](https://github.com/user-attachments/assets/62500e11-fa1b-4cc8-8a50-d67d8212125a)
-
-Detection labels were consistent with Pikabot-related malware.
-
 Indicators of Compromise (IOCs)
 Domains
 
