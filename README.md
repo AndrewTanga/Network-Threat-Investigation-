@@ -39,7 +39,6 @@ Shortly after the download, the host issued DNS queries to multiple domains with
 Recently registered (December 2023)
 
 Flagged as malicious by multiple security vendors
-![5](https://github.com/user-attachments/assets/d6d45dcc-9a7c-4068-a7b4-856904491d23)
 Reported in association with Pikabot
 ![additional - PIKABOT](https://github.com/user-attachments/assets/e817d98d-b7ab-40bb-b489-d8ee9e873f3e)
 
@@ -71,7 +70,7 @@ SHA256
 F24888DA47BAE0149AB5C0D887D32FC155CB42AC8138D22699AE12CE1DCA6BD1
 
 
-VirusTotal results showed 26+ security vendors flagging the file as malicious.
+VirusTotal results showed 28 security vendors flagging the file as malicious.
 ![5](https://github.com/user-attachments/assets/62500e11-fa1b-4cc8-8a50-d67d8212125a)
 
 Detection labels were consistent with Pikabot-related malware.
